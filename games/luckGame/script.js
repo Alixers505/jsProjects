@@ -1,20 +1,33 @@
 const resultBox = document.getElementById("result");
-var flip = document.querySelector("form");
-flip.addEventListener("submit", function(event) {
-    resultBox.classList.remove("loss");
-    resultBox.classList.remove("wow");
-    var random = Math.random();
-    var result = "Standing on the edge! How did that happen?";;
+const flip = document.querySelector("form");
+let result = '';
+flip.addEventListener("click", function(event) {
+  event.preventDefault();
+
+  let random = Math.random();
+  result = "Flipping...";
+  resultBox.innerHTML = result;
+  //console.log(result);
+
+  resultBox.classList.remove("loss");
+  resultBox.classList.remove("wow");
+  resultBox.classList.remove("win");
+
+  setTimeout(function() {
 
     if (random > 0.5 && random < 0.9) {
-        result = "You Won!";
+      result = "You Won!";
+      resultBox.classList.add("win");
     } else if (random < 0.5 && random > 0.1) {
-        result = "You Lost!";
-        resultBox.classList.add("loss");
+      resultBox.classList.add("loss");
+      result = "You Lost!";
     } else {
-        resultBox.classList.add("wow");
+      resultBox.classList.add("wow");
+      result = "Wow, it's standing on its edge!";
     }
 
+    //console.log(result);
     resultBox.innerHTML = result;
-    event.preventDefault();
+  }, 500);
+
 });

@@ -1,11 +1,41 @@
+
+h1 {
+  font: bold 48px/1.5 Arial;
+}
+
+body {
+  font: normal 16px/1.5 sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+button {
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background-color: green;
+  color: #fff;
+  font: normal 20px/1.5 sans-serif;
+  padding: 5px 10px;
+}
+
+button:focus {
+  outline: 0;
+}
+
 #result {
-    color: green;
-    margin: 20px;
-    font: bold 24px/1.5 Helvetica;
+  color: #ccc;
+  font: normal 24px/1.5 Helvetica;
+  margin: 20px;
 }
 #result.loss {
-    color: red;
+  color: red;
+  font-weight: bold;
 }
 #result.wow {
-    color: purple;
+  color: purple;
+  font-weight: bold;
+}
+#result.win {
+  color: green;
+  font-weight: bold;
 }

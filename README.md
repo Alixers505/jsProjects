@@ -10,7 +10,9 @@ A project folder for a broad spectrum of small, random JS projects
 
 ### Games
   * [Luck Game](/games/luckGame)
+    * super simple coin flip game
   * [Word Scramble](/games/wordScramble)
+    * gives a user a scrambled word to unscramble
   
 ### JavaScript 30 
 Projects from [Wes Bos's JavaScript 30](https://javascript30.com/)
