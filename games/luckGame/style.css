@@ -1,0 +1,11 @@
+#result {
+    color: green;
+    margin: 20px;
+    font: bold 24px/1.5 Helvetica;
+}
+#result.loss {
+    color: red;
+}
+#result.wow {
+    color: purple;
+}

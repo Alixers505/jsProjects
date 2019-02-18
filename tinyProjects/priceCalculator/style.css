@@ -1,0 +1,48 @@
+input,
+button {
+    margin: 0 0 20px;
+    font: normal 16px/1.5 Arial;
+    width: 200px;
+}
+
+input {
+    display: block;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: navy;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 50px;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    flex: 1;
+    vertical-align: top;
+    margin: 20px auto;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+    font: normal 16px/1.5 Helvetica;
+}
+
+h1 {
+    font: bold 24px/2 Arial;
+}
+
+h2 {
+    font: bold 18px/2 Arial;
+}
+
+.value {
+    margin: 0 0 20px;
+}
