@@ -22,7 +22,7 @@ let count = setInterval(function() {
     let seconds = Math.floor((time % (1000 * 60)) / 1000);
 
     document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";;
+    + minutes + "m " + seconds + "s ";
 
     if (time < 0) {
         clearInterval(x);

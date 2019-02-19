@@ -1,5 +1,14 @@
+body {
+  font: normal 16px/1.5 sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+}
+
 #countdown {
-    font: bold 40px/2 Helvetica;
-    color: blue;
+  color: blue;
+  font: bold 40px/2 Helvetica;
 }
 
