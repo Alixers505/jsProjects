@@ -26,7 +26,7 @@ flip.addEventListener("submit", function(event) {
       result = "Wow, it's standing on its edge!";
     }
 
-    console.log(result);
+    //console.log(result);
     resultBox.innerHTML = result;
   }, 500);
 
