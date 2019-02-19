@@ -1,13 +1,13 @@
 const resultBox = document.getElementById("result");
 const flip = document.querySelector("form");
 let result = '';
-flip.addEventListener("click", function(event) {
+flip.addEventListener("submit", function(event) {
   event.preventDefault();
 
   let random = Math.random();
   result = "Flipping...";
   resultBox.innerHTML = result;
-  //console.log(result);
+  console.log(result);
 
   resultBox.classList.remove("loss");
   resultBox.classList.remove("wow");
@@ -26,7 +26,7 @@ flip.addEventListener("click", function(event) {
       result = "Wow, it's standing on its edge!";
     }
 
-    //console.log(result);
+    console.log(result);
     resultBox.innerHTML = result;
   }, 500);
 

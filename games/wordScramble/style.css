@@ -38,5 +38,6 @@ section {
 /* set height to prevent page from jumping when result displays
 will need to be adjusted if font size is changed*/
 #result {
+  display: none;
   height: 21px;
 }
