@@ -12,6 +12,10 @@ A project folder for a broad spectrum of small, random JS projects
   * [Luck Game](/games/luckGame)
   * [Word Scramble](/games/wordScramble)
   
+### Event Tables
+[Event Tables](/eventTables) 
+- This project has only gone through initial setup. It has not been completed yet
+  
 ### JavaScript 30 
 Projects from [Wes Bos's JavaScript 30](https://javascript30.com/)
 
