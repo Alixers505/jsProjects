@@ -1,4 +1,4 @@
-let form = document.querySelector("form");
+const form = document.querySelector("form");
 const taxRate = 1.09;
 const phonePrice = 500;
 const accessoryPrice = 50;
@@ -9,7 +9,7 @@ form.addEventListener("submit", function(event) {
     event.preventDefault();
 
     let phones = 0;
-    let bankBalance = form.elements.balance.value;
+    let bankBalance = startingBalance;
 
     while (bankBalance >= pricePerPurchase) {
         bankBalance = (bankBalance - pricePerPurchase).toFixed(2);
@@ -18,6 +18,6 @@ form.addEventListener("submit", function(event) {
 
     document.getElementById("startingBalance").innerHTML = "$" + startingBalance;
     document.getElementById("phones").innerHTML = phones;
-    document.getElementById("balance").innerHTML = "$" + bankBalance;
+    document.getElementById("remainingBalance").innerHTML = "$" + bankBalance;
     document.getElementById("purchase").innerHTML = "$" + (phones * pricePerPurchase).toFixed(2);
 });

@@ -18,6 +18,10 @@ button {
     border-radius: 50px;
 }
 
+button:focus {
+    outline: 0;
+}
+
 main {
     display: flex;
 }
