@@ -14,6 +14,10 @@ A project folder for a broad spectrum of small, random JS projects
   * [Word Scramble](/games/wordScramble)
     * gives a user a scrambled word to unscramble
   
+### Event Tables
+[Event Tables](/eventTables) 
+- This project has only gone through initial setup. It has not been completed yet
+  
 ### JavaScript 30 
 Projects from [Wes Bos's JavaScript 30](https://javascript30.com/)
 
