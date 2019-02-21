@@ -1,26 +1,41 @@
-// Define Parts
-let tasks = new Array;
+(function() {
 
-let taskAdd = document.getElementById("add").addEventListener('click', add);
-let listItem = document.addEventListener('click', completed);
+  // Define Parts
+  let tasks = new Array;
+  const orderedList = document.getElementById("taskList");
+  const taskButton = document.getElementById("addBtn");
+  const newTask = document.getElementById("newTask");
 
-const ol = document.getElementById("taskList");
+  let listItem = document.addEventListener('click', markCompleted);
 
-// Declare Function to "add" tasks
-function add() {
+  // Listen for click
+  taskButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    addTask();
+  });
+
+  // Declare Function to "add" tasks
+  function addTask() {
     const li = document.createElement("li");
-    let newTask = document.getElementById("taskAdd").value;
-    let taskText = document.createTextNode(newTask);
+    let taskText = document.createTextNode(newTask.value);
 
-    li.appendChild(taskText);
+    orderedList.appendChild(li).append(taskText);
 
-    ol.appendChild(li);
-}
+    newTask.value = '';
+  }
+
+  // Declare Function to remove task from list
+  function removeTask() {
+
+  }
+
+  // Declare Function to mark tasks as "completed"
+
+  function markCompleted() {
+
+  }
+
+})();
 
 
-// Declare Function to mark tasks as "completed"
-
-function completed() {
-    
-}
 

@@ -1,0 +1,33 @@
+body {
+  font: normal 20px/1.5 sans-serif;
+  margin: 0;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  font: bold 36px/1.5 sans-serif;
+}
+
+button {
+  background-color: blue;
+  border-color: blue;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+input {
+  border: 1px solid #aaa;
+  font-size: 18px;
+  padding: 5px 10px;
+}
