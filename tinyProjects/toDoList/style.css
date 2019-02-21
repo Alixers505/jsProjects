@@ -10,6 +10,7 @@ main {
 }
 
 h1 {
+  border-bottom: 5px solid blue;
   font: bold 36px/1.5 sans-serif;
 }
 
@@ -30,4 +31,17 @@ input {
   border: 1px solid #aaa;
   font-size: 18px;
   padding: 5px 10px;
+}
+
+#taskList i {
+  margin-right: 20px;
+}
+
+#taskList li {
+  border-bottom: 1px solid lightgoldenrodyellow;
+  list-style: none;
+}
+
+.task-completed {
+  text-decoration: line-through;
 }

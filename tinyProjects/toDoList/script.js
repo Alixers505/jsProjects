@@ -1,41 +1,36 @@
 (function() {
-
-  // Define Parts
+// Define Parts
   let tasks = new Array;
-  const orderedList = document.getElementById("taskList");
+  const unorderedList = document.getElementById("taskList");
   const taskButton = document.getElementById("addBtn");
-  const newTask = document.getElementById("newTask");
+  const newTaskInput = document.getElementById("newTask");
 
-  let listItem = document.addEventListener('click', markCompleted);
-
-  // Listen for click
+  // Add Task
   taskButton.addEventListener('click', function(event) {
     event.preventDefault();
-    addTask();
+
+    const li = document.createElement("li");
+    const iconElement = document.createElement("i");
+
+    if(newTaskInput.value.trim() === '') {
+      alert("Please enter a task to add to the list");
+    } else {
+      iconElement.classList.add('fas', 'fa-trash-alt');
+      iconElement.addEventListener('click', removeTask);
+      unorderedList.appendChild(li).append(iconElement, newTaskInput.value);
+
+      newTaskInput.value = '';
+      //console.log("event added");
+    }
+
   });
 
-  // Declare Function to "add" tasks
-  function addTask() {
-    const li = document.createElement("li");
-    let taskText = document.createTextNode(newTask.value);
+  // Remove task
 
-    orderedList.appendChild(li).append(taskText);
-
-    newTask.value = '';
-  }
-
-  // Declare Function to remove task from list
   function removeTask() {
-
+    this.parentElement.remove();
+    console.log("event removed");
   }
 
-  // Declare Function to mark tasks as "completed"
-
-  function markCompleted() {
-
-  }
 
 })();
-
-
-
