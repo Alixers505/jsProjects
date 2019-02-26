@@ -9,12 +9,12 @@
   taskButton.addEventListener('click', function(event) {
     event.preventDefault();
 
-    const li = document.createElement("li");
-    const iconElement = document.createElement("i");
-
     if(newTaskInput.value.trim() === '') {
-      alert("Please enter a task to add to the list");
+      alert("Please enter a task to add to the list.");
     } else {
+      const li = document.createElement("li");
+      const iconElement = document.createElement("i");
+
       iconElement.classList.add('fas', 'fa-trash-alt');
       iconElement.addEventListener('click', removeTask);
       unorderedList.appendChild(li).append(iconElement, newTaskInput.value);
@@ -29,7 +29,7 @@
 
   function removeTask() {
     this.parentElement.remove();
-    console.log("event removed");
+    //console.log("event removed");
   }
 
 
