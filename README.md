@@ -9,10 +9,24 @@ A project folder for a broad spectrum of small, random JS projects
 [f]: #files
 
 ### Games
-  * [Luck Game](/games/luckGame)
+* [Luck Game](/games/luckGame)
     * super simple coin flip game
-  * [Word Scramble](/games/wordScramble)
+* [Word Scramble](/games/wordScramble)
     * gives a user a scrambled word to unscramble
+    
+### Eloquent JS
+
+My solutions to the exercises in Eloquent JS.
+
+#### Chapter 2: Program Structure
+    
+* [Hash Triangle](/eloquentJS/chapter2/hashTriangle.js)
+* [FizzBuzz](/eloquentJS/chapter2/fizzBuzz.js)
+* [Chessboard](/eloquentJS/chapter2/chessboard.js)
+
+#### Chapter 3: Functions
+
+* 
   
 ### Event Tables
 [Event Tables](/eventTables) 
