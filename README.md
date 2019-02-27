@@ -26,11 +26,25 @@ My solutions to the exercises in Eloquent JS.
 
 #### Chapter 3: Functions
 
+* [Minimum](/eloquentJS/chapter3/minimum.js)
+* [Recursive](/eloquentJS/chapter3/recursion.js)
+* [Bean Counting](/eloquentJS/chapter3/beanCounting.js)
+
+#### Chapter 4: Data Structures
+
 * 
   
 ### Event Tables
 [Event Tables](/eventTables) 
 - This project has only gone through initial setup. It has not been completed yet
+
+
+### Front End Masters
+- Directory to hold exercises from courses on Front End Masters
+
+#### JS the Hard Way
+
+* [Callbacks and Higher Functions](/frontendMasters/jsTheHardWay/callbacksAndHigherFunctions)
   
 ### JavaScript 30 
 Projects from [Wes Bos's JavaScript 30](https://javascript30.com/)
