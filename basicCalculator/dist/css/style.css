@@ -1,0 +1,124 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font: normal 16px/1.5 sans-serif;
+  font-size: 16px;
+  margin: 0; }
+
+header,
+footer {
+  margin: 0 auto;
+  max-width: 90%;
+  text-align: center;
+  width: 100%; }
+  header button,
+  footer button {
+    background-color: #6497b1;
+    border-radius: 5px;
+    padding: 5px 10px; }
+    header button a,
+    footer button a {
+      color: #fff;
+      font-size: 1rem; }
+
+main {
+  margin: 0 auto;
+  max-width: 300px;
+  width: 100%; }
+
+h1 {
+  color: #005b96;
+  font-size: 2.5rem; }
+
+a {
+  text-decoration: none; }
+
+button,
+input {
+  border: none; }
+  button:focus,
+  input:focus {
+    outline: none; }
+
+#calculator-app {
+  background-color: #2d2d2d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 40px auto;
+  padding: 0.5px; }
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.calculator-button {
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  font-size: 1.75rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0.5px;
+  padding: 10px 5px; }
+
+#performCalculation,
+.calculate-function {
+  background-color: #005b96;
+  color: #fff; }
+
+.clear-all,
+.modify-value {
+  background-color: #6497b1; }
+
+#decimal,
+.number {
+  background-color: #eaeaea; }
+
+#number0 {
+  -ms-flex-preferred-size: calc(50% - 1px);
+  flex-basis: calc(50% - 1px);
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+
+#calculatorDisplay {
+  background-color: #eaeaea;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 100%;
+  flex: 0 1 100%;
+  font-size: 1.75rem;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin: 0.5px;
+  min-height: 40px;
+  overflow: hidden;
+  padding: 5px 10px; }
+  #calculatorDisplay:focus {
+    outline: none; }

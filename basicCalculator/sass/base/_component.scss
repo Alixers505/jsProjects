@@ -1,0 +1,63 @@
+// Custom styling for the calculator component
+
+#calculator-app {
+  background-color: $grey-9;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  padding: 0.5px;
+}
+
+.flex-row {
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: row;
+}
+
+.calculator-button {
+  color: $black;
+  display: flex;
+  flex: 0 1 100%;
+  font-size: 1.75rem;
+  justify-content: center;
+  margin: 0.5px;
+  padding: 10px 5px;
+}
+
+#performCalculation,
+.calculate-function {
+  background-color: $secondary;
+  color: $white;
+}
+
+.clear-all,
+.modify-value {
+  background-color: $info;
+}
+
+#decimal,
+.number {
+  background-color: $grey-2;
+}
+
+#number0 {
+  flex-basis: calc(50% - 1px);
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+#calculatorDisplay {
+  background-color: $grey-2;
+  border: 0;
+  display: flex;
+  flex: 0 1 100%;
+  font-size: 1.75rem;
+  justify-content: flex-end;
+  margin: 0.5px;
+  min-height: 40px;
+  overflow: hidden;
+  padding: 5px 10px;
+  &:focus {
+    outline: none;
+  }
+}
