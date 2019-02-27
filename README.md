@@ -32,6 +32,7 @@ My solutions to the exercises in Eloquent JS.
 
 #### Chapter 4: Data Structures
 
+* [Sum of Range](/eloquentJS/chapter4/sumOfRange.js)
 * 
   
 ### Event Tables
