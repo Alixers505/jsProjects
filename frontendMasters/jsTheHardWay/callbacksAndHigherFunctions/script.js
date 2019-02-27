@@ -80,18 +80,54 @@ function reduce(array, callback, initialValue) {
   return initialValue;
 }
 
-var nums = [4, 1, 3];
-var add = function(a, b) { return a + b; }
-console.log("Reduced Value: " + reduce(nums, add, 0));   //-> 8
+let nums = [4, 1, 3];
+let add = function(a, b) { return a + b; };
+//console.log("Reduced Value: " + reduce(nums, add, 0));   //-> 8
 
 
 
 //Extension 3
 function intersection(arrays) {
+  const argumentNumber = arguments.length;
+  //console.log(argumentNumber);
+  let sameInputs = [];
+  const numbersSeen = {};
 
+  for(let i = 0; i < argumentNumber; i++) {
+    let currentArray = arguments[i];
+
+    for(let j = 0; j < currentArray.length; j++) {
+      let currentNumber = currentArray[j];
+
+      // if number exists in the object
+      // increase key count
+      // else
+      // add number to object
+      if(numbersSeen[currentNumber]) {
+        numbersSeen[currentNumber] += 1;
+      } else {
+        numbersSeen[currentNumber] = 1;
+      }
+
+    }
+
+
+  }
+
+  // if the value of a key = argumentNumber, then add the key to the sameInputs array
+
+  for(let key in numbersSeen) {
+    if(numbersSeen[key] === argumentNumber) {
+      sameInputs.push(key);
+    }
+  }
+
+  //console.log(numbersSeen);
+  // return values which appear in all arguments
+  return sameInputs;
 }
 
-// console.log(intersection([5, 10, 15, 20], [15, 88, 1, 5, 7], [1, 10, 15, 5, 20]));
+//console.log(intersection([5, 10, 15, 20], [15, 88, 1, 5, 7], [1, 10, 15, 5, 20]));
 // should log: [5, 15]
 
 //Extension 4
