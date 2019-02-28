@@ -33,7 +33,8 @@ My solutions to the exercises in Eloquent JS.
 #### Chapter 4: Data Structures
 
 * [Sum of Range](/eloquentJS/chapter4/sumOfRange.js)
-* 
+* [Reversing An Array](/eloquentJS/chapter4/reversingArray.js)
+* [A List](/eloquentJS/chapter4/aList.js)
   
 ### Event Tables
 [Event Tables](/eventTables) 
