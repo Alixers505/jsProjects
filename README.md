@@ -8,15 +8,28 @@ A project folder for a broad spectrum of small, random JS projects
 ## Files
 [f]: #files
 
-### Games
-* [Luck Game](/games/luckGame)
-    * super simple coin flip game
-* [Word Scramble](/games/wordScramble)
-    * gives a user a scrambled word to unscramble
-    
+Language and tool utilization
+
+- JavaScript Only
+  - EloquentJS - Exercises in Chapters 2-4
+  - jsTheHardWay - callbackAndHigherFunctions
+  
+- JavaScript, HTML, CSS
+  - JavaScript30 
+  - tinyProjects
+  - weatherApp
+  
+- JavaScript, HTML, Sass, Gulp, Browser-Sync, Yarn
+  - basicCalculator
+  
+### basicCalculator
+A [basic calculator](/basicCalculator) modeled from the design used for the iPhone calculator app.
+
+-- Note -- This app is in development.
+
 ### Eloquent JS
 
-My solutions to the exercises in Eloquent JS.
+My solutions to the exercises in [Eloquent JS](https://eloquentjavascript.net/).
 
 #### Chapter 2: Program Structure
     
@@ -37,7 +50,7 @@ My solutions to the exercises in Eloquent JS.
   
 ### Event Tables
 [Event Tables](/eventTables) 
-- This project has only gone through initial setup. It has not been completed yet
+- This project has only gone through initial setup. It has not been started yet.
 
 
 ### Front End Masters
@@ -47,6 +60,13 @@ My solutions to the exercises in Eloquent JS.
 
 * [Callbacks and Higher Functions](/frontendMasters/jsTheHardWay/callbacksAndHigherFunctions)
   
+
+### Games
+* [Luck Game](/games/luckGame)
+    * super simple coin flip game
+* [Word Scramble](/games/wordScramble)
+    * gives a user a scrambled word to unscramble
+    
 ### JavaScript 30 
 Projects from [Wes Bos's JavaScript 30](https://javascript30.com/)
 
@@ -60,7 +80,6 @@ Projects from [Wes Bos's JavaScript 30](https://javascript30.com/)
   * [slideshow](/tinyProjects/slideshow)
     * Slideshow of random images
   * [toDoList](/tinyProjects/toDoList)
-    * Exactly what it sounds like
 
 ### Weather App
 [Weather App](/weatherApp)
