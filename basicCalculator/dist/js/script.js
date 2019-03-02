@@ -1,5 +1,4 @@
-(function() {
-
+(function () {
   // this object will be updated later on, mostly holding values
   const calculator = {
     displayValue: '0',
@@ -8,15 +7,15 @@
     waitingForNumber: false
   };
   const calculatorButtons = document.querySelectorAll('.calculator-button');
-
   let displayValue = calculator.displayValue;
-  let newResult = '';
-
-  // Add an event listener to each calculator button
+  let newResult = ''; // Add an event listener to each calculator button
   // Return the value or action performed
-  calculatorButtons.forEach( button => {
+
+  calculatorButtons.forEach(button => {
     button.addEventListener('click', event => {
-      const { target } = event;
+      const {
+        target
+      } = event;
       newResult = target.value.toString();
 
       if (target !== button) {
@@ -35,7 +34,7 @@
       if (target.classList.contains('number')) {
         console.log("Target: " + 'number', "| Value: " + target.value);
         return newResult;
-    }
+      }
 
       if (target.classList.contains('modify-value')) {
         //console.log("Target: " + 'modify-value', "| Modify By: " + target.value);
@@ -46,27 +45,23 @@
         //console.log("Target: " + 'clearAll', "| ID: " + target.id);
         clearDisplay();
       }
-
     });
   });
 
-
   function clearDisplay() {
-     calculator.displayValue = '0';
+    calculator.displayValue = '0';
   }
-
 
   function displayResult(newResult) {
     const calculatorDisplay = document.getElementById('calculatorDisplay');
     calculatorDisplay.innerHTML = displayValue;
 
-    if(newResult !== undefined) {
+    if (newResult !== undefined) {
       calculatorDisplay.innerHTML = newResult;
-    } else if(newResult === '0') {
+    } else if (newResult === '0') {
       calculatorDisplay.innerHTML = newResult;
     }
   }
 
   displayResult();
-
 })();

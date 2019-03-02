@@ -7,6 +7,7 @@ const sassOptions = {
   errLogToConsole: true
 };
 const browserSync = require('browser-sync').create();
+const babel = require('gulp-babel');
 
 gulp.task('browser-sync', function() {
   browserSync.init({
@@ -34,11 +35,23 @@ gulp.task('html', function () {
     .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('js', function () {
+  return gulp
+    .src( [
+      'node_modules/babel-polyfill/dist/polyfill.js',
+      './js/**/*.js'
+    ])
+    .pipe(babel())
+    .pipe(gulp.dest('./dist/js'))
+    .pipe(browserSync.stream());
+});
+
 gulp.task('watch', function() {
   browserSync.init({
     server: "./dist"
   });
 
   gulp.watch('./sass/**/*.scss', gulp.series('sass'));
+  gulp.watch('./js/**/*js', gulp.series('js'));
   gulp.watch('./public/*.html', gulp.series('html')).on('change', browserSync.reload);
 });

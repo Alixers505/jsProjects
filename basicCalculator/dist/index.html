@@ -9,16 +9,60 @@
   <noscript>This page requires JavaScript to function. Please enable JavaScript to view this page as it was intended.</noscript>
 </head>
 <body>
+  <header>
+    <h1>Basic Calculator</h1>
+  </header>
 
   <main>
-    <h1 id="page-title">Basic Calculator</h1>
+    <h3>This application is currently in development.</h3>
     <div id="calculator-app">
-      <p>Change 1005</p>
-      <p>I be the change</p>
-      <p>All these changes are insane</p>
+      <div class="flex-row">
+        <div id="calculatorDisplay" value="0"></div>
+      </div>
+
+      <div class="flex-row">
+        <button id="clearAll" class="calculator-button clear-all">AC</button>
+        <button id="positiveNegative" class="calculator-button modify-value" value="+/-">+/-</button>
+        <button id="percentage" class="calculator-button modify-value" value="&#37;">&#37;</button>
+        <button id="divide" class="calculator-button calculate-function" value="&divide;">&divide;</button>
+      </div>
+
+      <div class="flex-row">
+        <button id="number7" class="calculator-button number" value="7">7</button>
+        <button id="number8" class="calculator-button number" value="8">8</button>
+        <button id="number9" class="calculator-button number" value="9">9</button>
+        <button id="multiply" class="calculator-button calculate-function" value="&times;">&times;</button>
+      </div>
+
+      <div class="flex-row">
+        <button id="number4" class="calculator-button number" value="4">4</button>
+        <button id="number5" class="calculator-button number" value="5">5</button>
+        <button id="number6" class="calculator-button number" value="6">6</button>
+        <button id="subtract" class="calculator-button calculate-function" value="&minus;">&minus;</button>
+      </div>
+
+      <div class="flex-row">
+        <button id="number1" class="calculator-button number" value="1">1</button>
+        <button id="number2" class="calculator-button number" value="2">2</button>
+        <button id="number3" class="calculator-button number" value="3">3</button>
+        <button id="add" class="calculator-button calculate-function" value="+">&plus;</button>
+      </div>
+
+      <div class="flex-row">
+        <button id="number0" class="calculator-button number" value="0">0</button>
+        <button id="decimal" class="calculator-button" value=".">.</button>
+        <button id="performCalculation" class="calculator-button" value="&equals;">&equals;</button>
+      </div>
+
     </div>
   </main>
 
-  <script src="../js/script.js"></script>
+  <footer>
+    <h3>Developed by Alysha Buselt</h3>
+    <button><a href="https://github.com/Alixers505">GitHub</a></button>
+  </footer>
+
+  <script src="./js/script.js"></script>
+
   </body>
 </html>
