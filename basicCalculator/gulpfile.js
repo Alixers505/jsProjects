@@ -46,6 +46,12 @@ gulp.task('js', function () {
     .pipe(browserSync.stream());
 });
 
+gulp.task('copy', function() {
+  return gulp
+    .src('./assets/*')
+    .pipe(gulp.dest('./dist/assets'));
+});
+
 gulp.task('watch', function() {
   browserSync.init({
     server: "./dist"
@@ -54,4 +60,5 @@ gulp.task('watch', function() {
   gulp.watch('./sass/**/*.scss', gulp.series('sass'));
   gulp.watch('./js/**/*js', gulp.series('js'));
   gulp.watch('./public/*.html', gulp.series('html')).on('change', browserSync.reload);
+  gulp.watch('./assets/*', gulp.series('copy'));
 });
