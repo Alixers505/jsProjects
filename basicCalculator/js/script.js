@@ -22,7 +22,7 @@
         return;
       }
 
-      if (target.classList.contains('calculate-function')) {
+      if (target.classList.contains('operator')) {
         console.log(verifyValue);
 
         if(initialNumber === null) {
@@ -41,6 +41,7 @@
         console.log(verifyValue);
         console.log(initialNumber, operator, secondNumber);
         initialNumber = performCalculation(initialNumber, secondNumber, operator);
+        operator = null;
         return;
       }
 
