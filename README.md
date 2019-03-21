@@ -22,10 +22,13 @@ Language and tool utilization
 - JavaScript, HTML, Sass, Gulp, Browser-Sync, Yarn
   - basicCalculator
   
+- JavaScript, HTML, CSS, Parcel, Yarn
+  - Games --> Character Generator
+  
 ### basicCalculator
 A [basic calculator](/basicCalculator) modeled from the design used for the iPhone calculator app.
 
--- Note -- This app is in development.
+-- Note -- This app is in development. It is a mostly working model, but there are bugs with the percentage, additive-inverse, and decimal functionalities.
 
 ### Eloquent JS
 
@@ -62,6 +65,8 @@ My solutions to the exercises in [Eloquent JS](https://eloquentjavascript.net/).
   
 
 ### Games
+* [Character Generator](/games/characterGenerator)
+  * generates a random character and skills when the user pushes a button
 * [Luck Game](/games/luckGame)
     * super simple coin flip game
 * [Word Scramble](/games/wordScramble)
