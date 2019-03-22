@@ -26,7 +26,7 @@ A project folder for a broad spectrum of small, random JS projects
 ## Eloquent JS
 [e]: #eloquent-js
 
-My solutions to the exercises in Eloquent JS.
+My solutions to the exercises in [Eloquent JS](https://eloquentjavascript.net/).
 
   * ### Chapter 2: Program Structure
       
@@ -42,7 +42,8 @@ My solutions to the exercises in Eloquent JS.
 
   * ### Chapter 4: Data Structures
   
-    -  
+    - [Sum of Range](/eloquentJS/chapter4/sumOfRange.js)
+    - 
  
 <br> 
 
