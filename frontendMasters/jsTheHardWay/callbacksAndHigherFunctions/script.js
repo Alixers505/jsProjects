@@ -131,26 +131,86 @@ function intersection(arrays) {
 // should log: [5, 15]
 
 //Extension 4
+// Take in multiple arrays
 function union(arrays) {
+  const argumentNumber = arguments.length;
+  //console.log(argumentNumber);
+  // Create a new array which contains distinct numbers only (no duplicates)
+  const newArray = [];
+
+  // Run through each array
+  for(let i = 0; i < argumentNumber; i++) {
+    let currentArray = arguments[i];
+
+    for (let j = 0; j < currentArray.length; j++) {
+      let currentNumber = currentArray[j];
+      // if the newArray is empty, add the first number
+      // else loop through the new array to see if the current number matches any number in the array
+      // add any numbers which don't already exist in the array
+      if(newArray.length < 1) {
+        newArray.push(currentNumber);
+      } else {
+        for (let k = 0; k < newArray.length; k++) {
+          if(!newArray.includes(currentNumber)) {
+            newArray.push(currentNumber);
+          }
+
+        }
+      }
+    }
+
+  }
+
+  // Return an array which contains all numbers in the original arrays (minus duplicates)
+  return newArray;
 
 }
 
-// console.log(union([5, 10, 15], [15, 88, 1, 5, 7], [100, 15, 10, 1, 5]));
+//console.log(union([5, 10, 15], [15, 88, 1, 5, 7], [100, 15, 10, 1, 5]));
 // should log: [5, 10, 15, 88, 1, 7, 100]
 
 //Extension 5
 function objOfMatches(array1, array2, callback) {
+  const newObj = {};
+
+  for(let i = 0; i < array1.length; i++) {
+    if( callback(array1[i]) === array2[i] ) {
+      newObj[array1[i]] = array2[i];
+    }
+  }
+
+  return newObj;
 
 }
 
-// console.log(objOfMatches(['hi', 'howdy', 'bye', 'later', 'hello'], ['HI', 'Howdy', 'BYE', 'LATER', 'hello'], function(str) { return str.toUpperCase(); }));
+//console.log(objOfMatches(['hi', 'howdy', 'bye', 'later', 'hello'], ['HI', 'Howdy', 'BYE', 'LATER', 'hello'], function(str) { return str.toUpperCase(); }));
 // should log: { hi: 'HI', bye: 'BYE', later: 'LATER' }
 
 //Extension 6
 function multiMap(arrVals, arrCallbacks) {
+  const newObj = {};
 
+  // For each item in the array, run each of the callbacks
+  // Assign callback returns as values to the keys listed in the arrVals
+
+  for(let i = 0; i < arrVals.length; i++) {
+    let arrayKey = arrVals[i];
+    //console.log(arrayKey);
+    let valArray = [];
+
+    for(let j = 0; j < arrCallbacks.length; j++) {
+      let currentCallback = arrCallbacks[j];
+      //console.log(currentCallback);
+
+      valArray.push(currentCallback(arrayKey));
+
+      newObj[arrayKey] = valArray;
+
+    }
+  }
+
+  return newObj;
 }
 
-// console.log(multiMap(['catfood', 'glue', 'beer'], [function(str) { return str.toUpperCase(); }, function(str) { return str[0].toUpperCase() + str.slice(1).toLowerCase(); }, function(str) { return str + str; }]));
+//console.log(multiMap(['catfood', 'glue', 'beer'], [function(str) { return str.toUpperCase(); }, function(str) { return str[0].toUpperCase() + str.slice(1).toLowerCase(); }, function(str) { return str + str; }]));
 // should log: { catfood: ['CATFOOD', 'Catfood', 'catfoodcatfood'], glue: ['GLUE', 'Glue', 'glueglue'], beer: ['BEER', 'Beer', 'beerbeer'] }
-
