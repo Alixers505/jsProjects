@@ -69,6 +69,7 @@ My solutions to the exercises in [Eloquent JS](https://eloquentjavascript.net/).
   * ### JS the Hard Parts
   
     - [Callbacks and Higher Functions](/frontendMasters/jsTheHardParts/callbacksAndHigherFunctions)
+    - [Closures](frontendMasters/jsTheHardParts/closures)
  
 <br>
 
