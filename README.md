@@ -20,6 +20,8 @@ A project folder for a broad spectrum of small, random JS projects
     * super simple coin flip game
 * [Word Scramble](/games/wordScramble)
     * gives a user a scrambled word to unscramble
+* [Character Generator](/games/characterGenerator)
+    * creates a random character from various arrays
 
 <br>  
     
@@ -43,7 +45,9 @@ My solutions to the exercises in [Eloquent JS](https://eloquentjavascript.net/).
   * ### Chapter 4: Data Structures
   
     - [Sum of Range](/eloquentJS/chapter4/sumOfRange.js)
-    - 
+    - [Reversing Array](/eloquentJS/chapter4/reversingArray.js)
+    - [A List](/eloquentJS/chapter4/aList.js)
+    - [Deep Comparison](/eloquentJS/chapter4/deepComparison.js)
  
 <br> 
 
