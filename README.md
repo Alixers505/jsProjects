@@ -48,6 +48,12 @@ My solutions to the exercises in [Eloquent JS](https://eloquentjavascript.net/).
     - [Reversing Array](/eloquentJS/chapter4/reversingArray.js)
     - [A List](/eloquentJS/chapter4/aList.js)
     - [Deep Comparison](/eloquentJS/chapter4/deepComparison.js)
+    
+  * ### Chapter 5: Higher Order Functions
+    
+      - [Everything](/eloquentJS/chapter5/everything.js)
+      - [Flattening](/eloquentJS/chapter5/flattening.js)
+      - [Your Own Loop](/eloquentJS/chapter5/yourOwnLoop.js)
  
 <br> 
 
