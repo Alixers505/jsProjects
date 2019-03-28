@@ -76,6 +76,7 @@ My solutions to the exercises in [Eloquent JS](https://eloquentjavascript.net/).
   
     - [Callbacks and Higher Functions](/frontendMasters/jsTheHardParts/callbacksAndHigherFunctions)
     - [Closures](frontendMasters/jsTheHardParts/closures)
+    - [Asynchronous JS](frontendMasters/jsTheHardParts/asynchronousJS)
  
 <br>
 
