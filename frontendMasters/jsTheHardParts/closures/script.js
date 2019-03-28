@@ -25,7 +25,6 @@ function createFunctionPrinter(input) {
 //printHello();
 
 
-
 function outer() {
   let counter = 0; // this variable is outside incrementCounter's scope
   function incrementCounter () {
@@ -34,6 +33,11 @@ function outer() {
   }
   return incrementCounter;
 }
+
+/*
+When a function is defined, it gets a [[scope]] property that references the Local Memory/Variable
+Environment in which it has been defined. Wherever we call that incrementCounter function - it will always look first in its immediate local memory (variable environment), and then in the [[scope]] property next before it looks any further up. Lexical Scope -- see the below const functions using counter definition from outer(). Our lexical scope (the available live data when our function was defined) is what determines our available variables and prioritization at function execution, not where our function is called
+ */
 
 const willCounter = outer();
 const jasCounter = outer();
