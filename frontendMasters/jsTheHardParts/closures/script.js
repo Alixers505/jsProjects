@@ -66,10 +66,10 @@ function addByX(x) {
 const addByTwo = addByX(2);
 
 // now call addByTwo with an input of 1
-//addByTwo(1);
+//console.log(addByTwo(1));
 
 // now call addByTwo with an input of 2
-//addByTwo(2);
+//console.log(addByTwo(2));
 
 
 //--------------------------------------------------
@@ -124,4 +124,4 @@ function delay(func, wait) {
   setTimeout(func, wait);
 }
 
-delay(sayHello, 1000);
+//delay(sayHello, 1000);

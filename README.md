@@ -72,11 +72,16 @@ My solutions to the exercises in [Eloquent JS](https://eloquentjavascript.net/).
 
 - Directory to hold exercises from courses on Front End Masters
 
-  * ### JS the Hard Parts
+  * ### JavaScript: The Hard Parts
   
     - [Callbacks and Higher Functions](/frontendMasters/jsTheHardParts/callbacksAndHigherFunctions)
     - [Closures](frontendMasters/jsTheHardParts/closures)
     - [Asynchronous JS](frontendMasters/jsTheHardParts/asynchronousJS)
+    - [Object-Oriented JS](frontendMasters/jsTheHardParts/objectOrientedJS)
+    
+  * ### Deep JavaScript Foundations
+    - [Closure](/frontendMasters/deepJavaScriptFoundations/closure)
+    - 
  
 <br>
 
