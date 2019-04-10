@@ -80,7 +80,7 @@ My solutions to the exercises in [Eloquent JS](https://eloquentjavascript.net/).
     - [Object-Oriented JS](frontendMasters/jsTheHardParts/objectOrientedJS)
     
   * ### Deep JavaScript Foundations
-    - [Closure](/frontendMasters/deepJavaScriptFoundations/closure)
+    - [Closure](/frontendMasters/deepJavaScriptFoundations/v2/closure)
     - 
  
 <br>

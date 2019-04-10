@@ -14,13 +14,17 @@
 
 ## Deep JavaScript Foundations -- Kyle Simpson
 
+Note: skipping this course for now to focus on code, rather than the deep hows and whys
+
 - Author of the "You Don't Know JavaScript" book series
 - Teaches by lecture and examples
-- Challenges include pop-quizzes and exercises, the exercises are only available in a downloadable zip
+- Note: this lecture series changed from v2 to v3 while I was in the middle of it, so there is a separate folder (v2) for the exercises I completed in v2, and the v3 files are in directories named for the course section
+- The exercises are only available in a downloadable zip
 
-  - Not including scope/hoisting exercises, as they seem to be more about refactoring code to meet his best practices than to actually write JS.
-  - Including exercises have 1 js file with the original code provided by Kyle Simpson, and a script.js which includes his original code and my edits to meet the challenge
-  - The provided HTML and CSS files are included at the root directly, rather than the individual exercise folders
+- v2:
+    - Not including scope/hoisting exercises, as they seem to be more about refactoring code to meet his best practices than to actually write JS.
+    - Including exercises have 1 js file with the original code provided by Kyle Simpson, and a script.js which includes his original code and my edits to meet the challenge
+    - The provided HTML and CSS files are included at the root directly, rather than the individual exercise folders
 
 
-** Return to the [Top][p] **
+** Return to the [Top][p] ** 
