@@ -26,5 +26,11 @@ Note: skipping this course for now to focus on code, rather than the deep hows a
     - Including exercises have 1 js file with the original code provided by Kyle Simpson, and a script.js which includes his original code and my edits to meet the challenge
     - The provided HTML and CSS files are included at the root directly, rather than the individual exercise folders
 
+## Complete Intro to React v4 -- Brian Holt
+
+- Sr. Cloud Developer Advocate at Microsoft
+- Nice class structure
+- Learn by building an application
+
 
 ** Return to the [Top][p] ** 

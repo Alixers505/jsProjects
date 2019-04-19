@@ -82,6 +82,10 @@ My solutions to the exercises in [Eloquent JS](https://eloquentjavascript.net/).
   * ### Deep JavaScript Foundations
     - [Closure](/frontendMasters/deepJavaScriptFoundations/v2/closure)
     - 
+
+  * ### Complete Intro to React v4
+    - [Pet Finder App](/frontendMasters/completeIntroToReactv4)
+
  
 <br>
 
