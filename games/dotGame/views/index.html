@@ -5,14 +5,16 @@
     <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
-  <header id="scoreBoard">
+  <header>
     <div>
-      <h1>
+      <h1>SpaceBalls</h1>
+      <h2>
         Score: <span id="playerScore">0</span>
-      </h1>
+      </h2>
     </div>
     <div>
-      <input type="range" min="10" max="100" value="10" id="speedSlider">
+      <label for="speedSlider">Speed:</label>
+      <input type="range" min="10" max="100" value="50" id="speedSlider" class="slider">
     </div>
   </header>
   <main id="gameZone">
